@@ -13,9 +13,12 @@ public class Listener  implements IInvokedMethodListener
 	public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
 		// TODO Auto-generated method stub
 		
-		try {
+		try 
+		{
 			BaseTest.initialize(method.getTestMethod().getMethodName(), method.getTestMethod().getDescription(), testResult.getClass().getSimpleName());
-		} catch (Exception e) {
+		} 
+		catch (Exception e)
+		{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
